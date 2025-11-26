@@ -3,15 +3,18 @@ Title
 Hierarchical Deep Learning Framework for File Fragment Classification
 
 Description
+
 This project implements a hierarchical deep learning framework for classifying file fragments. The framework first constructs a tree structure through hierarchical clustering of category mean features, then trains specialized classifiers for each leaf node in the tree. This approach enhances classification accuracy by leveraging hierarchical relationships between file types and optimizing model complexity for different categories. The system supports multiple classifier architectures (CNN, LSTM, CNN-LSTM) and includes tools for result visualization and performance evaluation.
 
 Dataset Information
+
 Dataset Name: File Fragment Type (FFT) - 75 Dataset
 Source: IEEE Dataport, accessible via DOI: http://dx.doi.org/10.21227/kfxw-8084
 Dataset Authors: Govind Mittal (New York University), Pawel Korus (New York University), Nasir Memon (New York University)
 Publication Date: 2022-05-18
 
 Code Information
+
 Core Components
 ClassificationReportCallback: Custom Keras callback to track and report classification performance during training
 hierarchical_clustering: Builds a 3-level clustering tree using category mean features
@@ -62,6 +65,7 @@ TensorFlow 2.x
 Keras
 Graphviz
 pydot (for model visualization)
+
 Methodology
 
 1. Data Preprocessing
@@ -87,3 +91,4 @@ Print classification reports for best-performing epochs
 
 License & Contribution Guidelines
 License: The FFT-75 dataset follows IEEE Dataport’s usage terms. This project is for research purposes only; commercial use requires compliance with the dataset’s license and prior permission.
+
